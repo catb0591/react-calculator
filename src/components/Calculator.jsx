@@ -4,12 +4,13 @@ import Error from "./Error";
 import Input from "./Input";
 import SelectBox from "./SelectBox";
 import Title from "./Title";
+import './calculatorPage.css'
 
 const Calculator = () => {
 
     const [numberOne, setValueOne] = useState(0)
     const [numberTwo, setValueTwo] = useState(0)
-    const [operator, setOperator] = useState()
+    const [operator, setOperator] = useState('+')
     const [error, setError] = useState('')
     const [answer, setAnswer] = useState()
 
