@@ -1,11 +1,12 @@
 import React from "react";
 
-const Input = () => {
+const Input = ({number, setValue}) => {
 
     return(
-<div>
-
-</div>)
+    <div>
+        <input onChange={(event)=> setValue(event.target.value)}value={number}/>
+    </div>
+)
 }
 
 export default Input

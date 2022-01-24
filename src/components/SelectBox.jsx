@@ -3,9 +3,12 @@ import React from "react";
 const SelectBox = () => {
 
     return (
-        <div>
-
-        </div>
+        <select>
+            <option Value="+">+</option>
+            <option Value="-">-</option>
+            <option Value="*">*</option>
+            <option Value="/">/</option>
+        </select>
     )
 }
 
