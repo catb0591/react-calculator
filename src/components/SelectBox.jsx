@@ -1,6 +1,6 @@
 import React from "react";
 
-const Error = () => {
+const SelectBox = () => {
 
     return (
         <div>
@@ -9,4 +9,4 @@ const Error = () => {
     )
 }
 
-export default Error
+export default SelectBox
