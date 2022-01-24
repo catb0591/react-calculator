@@ -8,12 +8,13 @@ const Calculator = () => {
 
     const [numberOne, setValueOne] = useState(0)
     const [numberTwo, setValueTwo] = useState(0)
+    const [operator, setOperator] = useState()
     
     return(
         <div>
             <Title/>
             <Input type="text" setValue={setValueOne} number={numberOne}/>
-            <SelectBox/>
+            <SelectBox setOperator={setOperator} operator={operator}/>
             <Input type="text" setValue={setValueTwo} number={numberTwo} />
             <input type="button" value="="/>
             <input type="text" disabled/>
