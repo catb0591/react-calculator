@@ -30,11 +30,11 @@ const Calculator = () => {
     return(
         <div>
             <Title/>
-            <Input type="text" setValue={setValueOne} number={numberOne}/>
+            <Input type="text" setValue={setValueOne} number={numberOne} disabled={false}/>
             <SelectBox setOperator={setOperator} operator={operator}/>
-            <Input type="text" setValue={setValueTwo} number={numberTwo} />
-            <input type="button" value="=" onClick={handleAnswer}/>
-            <Input type="text" setValue={setAnswer} number={answer}/>
+            <Input type="text" setValue={setValueTwo} number={numberTwo} disabled={false}/>
+            <input type="button" value="=" onClick={handleAnswer}/> {/*Should this be another component?*/}
+            <Input type="text" setValue={setAnswer} number={answer} disabled={true}/>
             <Error error={error}/>
         </div>
     )
