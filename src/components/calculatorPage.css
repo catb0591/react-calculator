@@ -1,0 +1,11 @@
+.error{
+    color: red;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.title{
+    color: darkslateblue;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
